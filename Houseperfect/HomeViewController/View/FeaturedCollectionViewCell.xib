@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Light.ttf">
+            <string>Lato-Light</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeFeaturedCollectionViewCell" id="vKY-7J-EPI" customClass="HomeCollectionViewCell" customModule="Houseperfect" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="216"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="216"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="featured-image" translatesAutoresizingMaskIntoConstraints="NO" id="HlZ-bX-pGh">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="YNT-fT-P2J"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$50 per month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUX-5F-wpt">
+                        <rect key="frame" x="0.0" y="150" width="150" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="6ev-fK-rlv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="799 Herman Views" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbI-d2-lHS">
+                        <rect key="frame" x="0.0" y="173" width="150" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="YCU-HU-KWp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 (img) 3 (img) 1334 sq ft." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9J-NB-ZtU">
+                        <rect key="frame" x="0.0" y="189" width="150" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="4kT-AT-P8h"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="HlZ-bX-pGh" firstAttribute="top" secondItem="vKY-7J-EPI" secondAttribute="top" id="5M1-tb-ase"/>
+                <constraint firstItem="CUX-5F-wpt" firstAttribute="leading" secondItem="vKY-7J-EPI" secondAttribute="leading" id="6qz-3v-owI"/>
+                <constraint firstItem="HlZ-bX-pGh" firstAttribute="leading" secondItem="vKY-7J-EPI" secondAttribute="leading" id="7OF-x5-Pcw"/>
+                <constraint firstAttribute="trailing" secondItem="J9J-NB-ZtU" secondAttribute="trailing" id="7OS-2E-gxh"/>
+                <constraint firstItem="kbI-d2-lHS" firstAttribute="leading" secondItem="vKY-7J-EPI" secondAttribute="leading" id="9d7-jA-W5n"/>
+                <constraint firstItem="J9J-NB-ZtU" firstAttribute="leading" secondItem="vKY-7J-EPI" secondAttribute="leading" id="Csi-ge-rMW"/>
+                <constraint firstItem="CUX-5F-wpt" firstAttribute="top" secondItem="HlZ-bX-pGh" secondAttribute="bottom" id="Od4-6v-XnF"/>
+                <constraint firstAttribute="trailing" secondItem="CUX-5F-wpt" secondAttribute="trailing" id="Top-G5-dYY"/>
+                <constraint firstAttribute="trailing" secondItem="HlZ-bX-pGh" secondAttribute="trailing" id="Uka-PI-Y3Z"/>
+                <constraint firstAttribute="trailing" secondItem="kbI-d2-lHS" secondAttribute="trailing" id="dlw-4k-vcN"/>
+                <constraint firstItem="J9J-NB-ZtU" firstAttribute="top" secondItem="kbI-d2-lHS" secondAttribute="bottom" id="l8z-HV-8Cz"/>
+                <constraint firstItem="kbI-d2-lHS" firstAttribute="top" secondItem="CUX-5F-wpt" secondAttribute="bottom" id="pLb-BX-WOM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="zWy-Nq-qI3"/>
+            <size key="customSize" width="150" height="211"/>
+            <connections>
+                <outlet property="imageView" destination="HlZ-bX-pGh" id="6l0-26-6zW"/>
+                <outlet property="lblAddress" destination="kbI-d2-lHS" id="fYA-Ut-yYS"/>
+                <outlet property="lblOtherInformation" destination="J9J-NB-ZtU" id="ZYN-RZ-4T4"/>
+                <outlet property="lblRate" destination="CUX-5F-wpt" id="fxZ-mx-RW0"/>
+            </connections>
+            <point key="canvasLocation" x="5" y="4.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="featured-image" width="150" height="150"/>
+    </resources>
+</document>
