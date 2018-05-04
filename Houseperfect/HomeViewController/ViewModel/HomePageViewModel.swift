@@ -28,9 +28,9 @@ struct HomeViewControllerViewModel {
     
     func heightForRowAt(row: Int) -> CGFloat {
         if homePageModel.data[row].featured{
-            return 250.0
+            return 300.0
         }
-        return 300.0
+        return 400.0
     }
 }
 
