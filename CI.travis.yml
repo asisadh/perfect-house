@@ -1,0 +1,4 @@
+language: swift
+xcode_project: Houseperfect.xcodeproj # path to your xcodeproj folder
+xcode_scheme: HouseperfectTests
+
